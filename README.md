@@ -1,4 +1,6 @@
-# Electric v3 Starter App
+# Electric3-Threejs starter app
+
+Demo starter app for [electric3-threejs](https://github.com/HendrikLevering/electric3-threejs) libary.
 
 ## Links
 
@@ -7,7 +9,7 @@
 
 ## Getting started
 
-* Shell: `clj -A:dev -X dev/-main`. 
+* Shell: `clj -A:dev -X dev/-main`.
 * Login instructions will be printed
 * REPL: `:dev` deps alias, `(dev/-main)` at the REPL to start dev build
 * App will start on http://localhost:8080
