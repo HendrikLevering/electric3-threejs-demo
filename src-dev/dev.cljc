@@ -7,6 +7,7 @@
    #?(:clj [electric-starter-app.server-jetty :as jetty])
    #?(:clj [shadow.cljs.devtools.api :as shadow])
    #?(:clj [shadow.cljs.devtools.server :as shadow-server])
+   #?(:clj [shadow.cljs.devtools.server.npm-deps :as npm-deps])
    #?(:clj [clojure.tools.logging :as log])))
 
 (comment (-main)) ; repl entrypoint
@@ -23,7 +24,7 @@
 
      (defn -main [& args]
        (log/info "Starting Electric compiler and server...")
-
+       (npm-deps/main nil nil)
        (shadow-server/start!) ; no-op in calva shadow-cljs configuration which starts this out of band
        (shadow/watch :dev)
 
@@ -36,8 +37,7 @@
        (comment
          (.stop server) ; jetty
          (server)       ; httpkit
-         )
-       )))
+         ))))
 
 #?(:cljs ; client entrypoint
    (do

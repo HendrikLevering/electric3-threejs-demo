@@ -5,6 +5,7 @@
            ch.qos.logback/logback-classic {:mvn/version "1.4.14"}
            ring/ring                      {:mvn/version "1.11.0"} ; to serve the app
            ring-basic-authentication/ring-basic-authentication {:mvn/version "1.2.0"} ; for demo
+           de.levering-it/electric-three {:mvn/version "0.0.4"}
            }
  :paths   ["src" "resources"]
  :aliases {:dev {:extra-paths ["src-dev"]

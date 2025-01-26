@@ -13,3 +13,7 @@ node_modules
 /resources/electric-manifest.edn
 /target
 .DS_Store
+.calva/
+.clj-kondo/imports/
+package.json
+package-lock.json
